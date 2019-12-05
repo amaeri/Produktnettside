@@ -1,0 +1,399 @@
+html {
+    scroll-snap-type: Y mandatory;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent linear-gradient(180deg, #162034 0%, #364D8D 49%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* MAIN START */
+
+/* GENERAL ALL SECTIONS START */
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    color: white;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.pil {
+    display: block;
+    width: 4%;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    padding-bottom: 1%;
+    animation: jumpUp 2s infinite;
+}
+
+@keyframes jumpUp {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-10px);
+    }
+
+    50% {
+        transform: scale(1, .95) translateY(0);
+    }
+}
+
+/* GENERAL ALL SECTIONS END */
+
+/* PARALLAX START */
+
+.parallax {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    z-index: 3;
+    place-items: center;
+    place-content: center;
+}
+
+/* PARALLAX END */
+
+/* FRONTPAGE START */
+
+.bg1 {
+    background-image: url(../img/julianoghedvig2.png);
+    background-size: 100%;
+    background-position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tittel img {
+    width: 50%;
+    display: block;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+/* FRONTPAGE END */
+
+/* ABOUT, ARTICLE1, ARTICLE1 START */
+
+#jul_hed {
+    position: fixed;
+    bottom: 0;
+    right: 4rem;
+    width: 28%;
+}
+
+.book-sections {
+    position: relative;
+    padding: 10%;
+    place-content: center;
+    place-items: center;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background: #5F71A0;
+    border: 2px solid white;
+    position: relative;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    padding: 10% 15% 10% 15%;
+}
+
+.text p {
+    text-align: justify;
+    padding: 4%;
+}
+
+.ab {
+    font-size: 122%;
+}
+
+.ar1 {
+    font-size: 123%;
+}
+
+.ar2 {
+    font-size: 129.1%;
+}
+
+/* animation start */
+.animation {
+    background-image: url(../img/hus_gammelt.png);
+    background-size: 100%;
+    background-position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 0 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.animation img {
+    max-width: 100%;
+    box-shadow: 10px 0 5px -1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.animation img.top {
+    animation: fadeInOut ease-in-out infinite 6s alternate;
+    animation-delay: 5s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* animation end */
+
+
+/* illustrations start */
+.illustrations {
+    position: relative;
+    box-shadow: 10px 0 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.illustrations img {
+    position: relative;
+    width: 100%;
+    box-shadow: 10px 0 5px -1px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* illustrations end */
+
+/* ABOUT, ARTICLE1, ARTICLE1 END */
+
+/* CREATORS START */
+
+.bg2 {
+    background-image: url(../img/bg_creators-buy5.png);
+    background-size: 100%;
+    background-position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#creators {
+    padding: 5%;
+    display: grid;
+    place-items: center;
+}
+
+#creators h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 250%;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #162034;
+}
+
+#creators p {
+    text-align: justify;
+}
+
+/* 1. Hvordan lage mer padding på sidene uten at det blir ujevn høyde? */
+
+.creators-text {
+    display: grid;
+    place-items: center;
+    width: 85.28%;
+}
+
+.creators-image {
+    display: grid;
+    place-items: center;
+}
+
+.creators-image img {
+    width: 80%;
+}
+
+a.webpage {
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+}
+
+.writer {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgb(70, 86, 128, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    font-weight: 100;
+    width: 80%;
+}
+
+.illustrator {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgb(70, 86, 128, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    font-weight: 100;
+    width: 80%;
+}
+
+/* CREATORS END */
+
+/* BUYBOOK START */
+#buybook {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.buy-text {
+    display: grid;
+    grid-template-rows: 3fr .5fr;
+    padding: 0 12% 0 12%;
+}
+
+.buy-text p {
+    color: white;
+    font-size: 156%;
+    text-align: justify;
+}
+
+a.buy {
+    text-decoration: none;
+    color: #293a68;
+    font-family: 'Playfair Display', serif;
+    font-size: 135%;
+    background-color: white;
+    width: 18%;
+    padding: 2%;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+a.buy:hover {
+    background-color: #4c6096;
+    color: white;
+}
+
+.buy-image img {
+    width: 80%;
+}
+
+/* BUYBOOK END */
+
+/*SNOWFLAKES START */
+
+.snowflakes {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -80;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-auto-flow: column;
+    z-index: 4;
+}
+
+.snowflakes>div {
+    background-image: url('../img/crystal.png');
+    background-size: contain;
+}
+
+.snowflakes>div:nth-of-type(1) {
+    animation: snowflakes 10s 5s infinite;
+    height: 30px;
+    width: 30px;
+}
+
+.snowflakes>div:nth-of-type(2) {
+    animation: snowflakes 12s 2s infinite;
+    height: 20px;
+    width: 20px;
+}
+
+.snowflakes>div:nth-of-type(3n) {
+    animation: snowflakes 16s 3s infinite;
+    height: 15px;
+    width: 15px;
+}
+
+.snowflakes>div:nth-of-type(4n) {
+    animation: snowflakes 14s 2s infinite;
+    height: 10px;
+    width: 10px;
+}
+
+.snowflakes>div:nth-of-type(5n) {
+    animation: snowflakes 10s 5s infinite;
+    height: 15px;
+    width: 15px;
+}
+
+.snowflakes>div:nth-of-type(7) {
+    animation: snowflakes 12s 4s infinite;
+    height: 20px;
+    width: 20px;
+}
+
+.snowflakes>div:nth-of-type(11) {
+    animation: snowflakes 8s 3s infinite;
+    height: 25px;
+    width: 25px;
+}
+
+
+@keyframes snowflakes {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+    }
+
+    100% {
+        transform: translate3d(15px, 120vh, 0px) rotate(360deg) scale(0.6);
+    }
+}
+
+/* SNOWFLAKES END */

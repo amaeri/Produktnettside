@@ -1,0 +1,173 @@
+/* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+/* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+/* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+
+@media (max-width:900px) {
+    /* GENERAL ALL SECTIONS START */
+
+    main {
+        display: grid;
+        place-items: none;
+    }
+
+    .pil {
+        display: block;
+        width: 8%;
+    }
+
+    #jul_hed {
+        width: 40%;
+        right: 1rem;
+    }
+
+    /* GENERAL ALL SECTIONS END */
+
+    /* FRONTPAGE START */
+    .bg1 {
+        background-image: url(../img/julianoghedvig.png);
+        /* Hvorfor repeterer den seg? */
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .tittel img {
+        width: 100%;
+        display: block;
+        padding-top: 2%;
+        margin: 0 auto;
+    }
+
+    /* FRONTPAGE END */
+
+    /* ABOUT, ARTICLE1, ARTICLE2 START */
+    .book-sections {
+        padding: 10%;
+    }
+
+    .book {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        height: 88vh;
+    }
+
+    .text {
+        padding: 0 10% 0 10%;
+        margin: 0;
+    }
+    
+    .text p {
+        text-align: justify;
+        margin: 0;
+    }
+
+    .ab {
+        font-size: 80%;
+    }
+    
+    .ar1 {
+        font-size: 80%;
+    }
+    
+    .ar2 {
+        font-size: 80%;
+    }
+
+    /* animation start */
+    .animation {
+        box-shadow: none;
+    }
+
+    .animation img {
+        box-shadow: none;
+    }
+    /* animation end */
+
+    /* illustration start */
+    .illustrations {
+        box-shadow: none;
+    }
+    .illustrations img {
+        box-shadow: none;
+    }
+
+    /* ABOUT, ARTICLE1, ARTICLE2 END */
+
+    /* CREATORS START */
+    .bg2 {
+        background-image: url(../img/bg_cb_rp.png);
+    }
+
+    .creators {
+        grid-template-columns: none;
+    }
+
+    #creators h2 {
+        font-size: 150%;
+    }
+
+    #creators p {
+        font-size: 70%;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: justify;
+    }
+
+    .creators-image img {
+        width: 28vw;
+        height: 28vw;
+        object-fit: cover;
+    }
+
+    .writer {
+        width: 90%;
+    }
+
+    .illustrator {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(70, 86, 128, 0.8) 100%);
+        width: 90%;
+    }
+
+    /* CREATORS END */
+
+
+    /* BUYBOOK START */
+   #buybook {
+        display: grid;
+        grid-template-columns: none;
+        position: relative;
+    }
+
+    .buy-text {
+        display: grid;
+        grid-template-columns: none;
+        padding: 10%;
+        margin-top: 5%;
+    }
+
+    .buy-text p {
+        font-size: 120%;
+    }
+
+    a.buy {
+        font-size: 120%;
+        width: 25%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .buy-image img {
+        width: 65%;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 5%;
+    }
+
+    /* BUYBOOK END */
+}
+
+/* MAIN END */
